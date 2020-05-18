@@ -27,12 +27,12 @@ from email.message import EmailMessage
 
 
 #defining SMTP variables and assigning them
-smtp_server = 'relay1.daytonoh.ncr.com'
+smtp_server = ''
 smtp_port = 587
 
 #defining login credentials
 mail_user = 'sp185474@ncr.com'
-mail_pass = 'Imthelord@12345'
+mail_pass = ''
 
 
 
@@ -139,7 +139,6 @@ stockname8 = stockname_html[0].text
 
 
 #defining list of recepients
-#contacts = ['yc250115@ncr.com','sp185474@ncr.com']
 contacts = ['sp185474@ncr.com']
 
 
