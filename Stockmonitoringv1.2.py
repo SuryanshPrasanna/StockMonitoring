@@ -31,7 +31,7 @@ smtp_server = ''
 smtp_port = 587
 
 #defining login credentials
-mail_user = 'sp185474@ncr.com'
+mail_user = ''
 mail_pass = ''
 
 
@@ -139,7 +139,7 @@ stockname8 = stockname_html[0].text
 
 
 #defining list of recepients
-contacts = ['sp185474@ncr.com']
+contacts = ['']
 
 
 #subject line of mail
