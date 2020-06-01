@@ -4,6 +4,7 @@
 #   1.0         First working version, completing the basic functionality.
 #   1.1         Replaced FOR loop with basic assignment to avoid over computation.
 #   1.2         Generating stock name dynamically instead of hardcoding it.
+#   1.3         Encrypting mail-id and password by fetching them from machine's environment variables.
 #
 #
 #
@@ -23,6 +24,7 @@ import bs4
 import lxml
 import smtplib
 from email.message import EmailMessage
+import os
 
 
 
@@ -31,8 +33,8 @@ smtp_server = ''
 smtp_port = 587
 
 #defining login credentials
-mail_user = ''
-mail_pass = ''
+mail_user = os.environ.get('gmail_username')
+mail_pass = os.environ.get('gmail_pass')
 
 
 
@@ -139,7 +141,7 @@ stockname8 = stockname_html[0].text
 
 
 #defining list of recepients
-contacts = ['']
+contacts = os.environ.get('office_mail_id')
 
 
 #subject line of mail
